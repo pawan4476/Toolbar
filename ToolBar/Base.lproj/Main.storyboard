@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="I5Q-cy-bDO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JFG-hF-QHw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="4nP-3y-G2a"/>
+                                    <constraint firstAttribute="width" constant="375" id="bze-vK-u1J"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="496316222.79845202">
+                                    <!--2016-09-23 09:37:02 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-347115600">
+                                    <!--1990-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="504874800">
+                                    <!--2016-12-31 11:00:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="asm-eV-Md8"/>
+                                </connections>
+                            </datePicker>
+                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9SG-qO-cxo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Z0c-QM-2Ff"/>
+                                    <constraint firstAttribute="width" constant="375" id="vWu-dX-lUG"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Done" width="45.5" id="Oiy-5Z-qba">
+                                        <connections>
+                                            <action selector="Done:" destination="BYZ-38-t0r" id="lak-r3-x4l"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8g1-rA-HWp"/>
+                                    <barButtonItem title="Cancel" id="Dss-JJ-gLu">
+                                        <connections>
+                                            <action selector="Cancel:" destination="BYZ-38-t0r" id="lja-FV-Shr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDn-ST-Iuo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R4E-yh-3jD"/>
+                                    <constraint firstAttribute="width" constant="343" id="dvE-WU-dnh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hZL-hS-lja"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.13758453900000001" blue="0.2448939258" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="JFG-hF-QHw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0o9-Uk-gsn"/>
+                            <constraint firstItem="9SG-qO-cxo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Ef-A2-Fis"/>
+                            <constraint firstItem="JFG-hF-QHw" firstAttribute="top" secondItem="9SG-qO-cxo" secondAttribute="bottom" id="DC4-ps-J1q"/>
+                            <constraint firstAttribute="trailing" secondItem="XDn-ST-Iuo" secondAttribute="trailing" constant="16" id="HCC-kZ-4I0"/>
+                            <constraint firstItem="XDn-ST-Iuo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="PAY-GQ-Xoe"/>
+                            <constraint firstItem="XDn-ST-Iuo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="a6O-zR-I6b"/>
+                            <constraint firstAttribute="trailing" secondItem="9SG-qO-cxo" secondAttribute="trailing" id="b6j-Fd-bQS"/>
+                            <constraint firstAttribute="trailing" secondItem="JFG-hF-QHw" secondAttribute="trailing" id="nYy-o8-Hbx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JFG-hF-QHw" secondAttribute="bottom" id="yg4-Gk-QAH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gLG-aP-z1n" appends="YES" id="ieE-Pi-doD"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="g0j-iW-9dQ"/>
+                    <connections>
+                        <outlet property="date" destination="JFG-hF-QHw" id="rY5-xu-owv"/>
+                        <outlet property="textField" destination="XDn-ST-Iuo" id="LxG-5n-tbE"/>
+                        <outlet property="toolBar" destination="9SG-qO-cxo" id="oyv-2j-nUD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gLG-aP-z1n">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="foT-LC-Arg"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="tsd-ud-mtn"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="671.20000000000005" y="-543.77811094452773"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SH2-fR-Mzg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I5Q-cy-bDO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a9h-0Q-qF3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jcx-ki-99K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLg-gJ-lSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.200000000000003" y="-543.77811094452773"/>
+        </scene>
+    </scenes>
+</document>
